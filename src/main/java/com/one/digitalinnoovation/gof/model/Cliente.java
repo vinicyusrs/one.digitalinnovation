@@ -1,10 +1,9 @@
 package com.one.digitalinnoovation.gof.model;
 
-import org.springframework.data.annotation.Id;
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 import jakarta.persistence.ManyToOne;
 
 @Entity
@@ -16,7 +15,7 @@ public class Cliente {
 	private String nome;
 	
 	@ManyToOne
-	private Endereco endereço;
+	private Endereco endereco;
 
 	public Long getId() {
 		return id;
@@ -34,12 +33,12 @@ public class Cliente {
 		this.nome = nome;
 	}
 
-	public Endereco getEndereço() {
-		return endereço;
+	public Endereco getEndereco() {
+		return endereco;
 	}
 
-	public void setEndereço(Endereco endereço) {
-		this.endereço = endereço;
+	public void setEndereco(Endereco endereço) {
+		this.endereco = endereço;
 	}
 	
 	

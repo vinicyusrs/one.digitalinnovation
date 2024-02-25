@@ -2,6 +2,7 @@ package com.one.digitalinnoovation.gof.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -14,8 +15,9 @@ import org.springframework.web.bind.annotation.RestController;
 import com.one.digitalinnoovation.gof.model.Cliente;
 import com.one.digitalinnoovation.gof.service.ClienteService;
 
+@CrossOrigin("*")
 @RestController
-@RequestMapping("cliente")
+@RequestMapping("clientes")
 public class ClienteRestController {
 
 	@Autowired
